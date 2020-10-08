@@ -1,6 +1,6 @@
 ﻿namespace OpenClosedPrinciple.Example2
 {
-    class LoginWithMobileNoAndPassword : ILogin
+    public class LoginWithMobileNoAndPassword : ILogin
     {
         private readonly int _mobileNo;
         public readonly string _password;

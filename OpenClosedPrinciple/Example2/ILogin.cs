@@ -1,6 +1,6 @@
 ﻿namespace OpenClosedPrinciple.Example2
 {
-    interface ILogin
+    public interface ILogin
     {
         bool IsUserValid();
     }

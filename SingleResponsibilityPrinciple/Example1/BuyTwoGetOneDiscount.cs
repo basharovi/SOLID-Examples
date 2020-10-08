@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SingleResponsibilityPrinciple.Example1
+﻿namespace SingleResponsibilityPrinciple.Example1
 {
-    class BuyTwoGetOneDiscount : IDiscount
+    public class BuyTwoGetOneDiscount : IDiscount
     {
         public decimal CalculateDiscount(decimal singleItemPrice, int quantity)
         {

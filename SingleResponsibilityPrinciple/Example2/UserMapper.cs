@@ -2,7 +2,7 @@
 
 namespace SingleResponsibilityPrinciple.Example2
 {
-    public class MapUser : IMapper<User>
+    public class UserMapper : IMapper<User>
     {
         public User Map(object sourceModel)
         {

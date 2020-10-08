@@ -1,7 +1,7 @@
 ﻿namespace SingleResponsibilityPrinciple.Example2
 {
-    public interface IMapper <Destination> where Destination : class
+    public interface IMapper <TDestination> where TDestination : class
     {
-        Destination Map(object sourceModel);
+        TDestination Map(object sourceModel);
     }
 }

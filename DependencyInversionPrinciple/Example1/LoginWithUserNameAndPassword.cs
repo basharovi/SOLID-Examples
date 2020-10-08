@@ -1,9 +1,9 @@
 ﻿namespace DependencyInversionPrinciple.Example1
 {
-    class LoginWithUserNameAndPassword : ILogin
+    public class LoginWithUserNameAndPassword : ILogin
     {
         private readonly string _username;
-        public readonly string _password;
+        private readonly string _password;
 
         public LoginWithUserNameAndPassword(string username, string password)
         {

@@ -9,9 +9,9 @@
             _calculator = calculator;
         }
 
-        public int Calculate(int firstNumber, int SecondNumber)
+        public int Calculate(int firstNumber, int secondNumber)
         {
-            return _calculator.Calculate(firstNumber, SecondNumber);
+            return _calculator.Calculate(firstNumber, secondNumber);
         }
     }
 }

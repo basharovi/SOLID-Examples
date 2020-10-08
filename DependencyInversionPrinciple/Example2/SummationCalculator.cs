@@ -1,6 +1,6 @@
 ﻿namespace DependencyInversionPrinciple.Example2
 {
-    class SummationCalculator : ICalculator
+    public class SummationCalculator : ICalculator
     {
         public int Calculate(int firstNumber, int secondNumber)
         {

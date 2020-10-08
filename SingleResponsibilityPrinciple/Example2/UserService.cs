@@ -10,7 +10,7 @@
             // We could use DI, but for simplicity I have skipped it.
 
             _userRepository = new UserRepository();
-            _mapper = new MapUser();
+            _mapper = new UserMapper();
         }
 
         public bool AddUser(UserViewModel userVm)

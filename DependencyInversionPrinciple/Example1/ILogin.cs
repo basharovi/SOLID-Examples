@@ -1,6 +1,6 @@
 ﻿namespace DependencyInversionPrinciple.Example1
 {
-    interface ILogin
+    public interface ILogin
     {
         bool IsUserValid();
     }
