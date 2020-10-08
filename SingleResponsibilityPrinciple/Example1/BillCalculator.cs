@@ -1,19 +1,22 @@
 ﻿namespace SingleResponsibilityPrinciple.Example1
 {
-    class BillCalculator
+    public class BillCalculator
     {
         private readonly IDiscount _discount;
-        private readonly decimal singleItemPrice;
+        private readonly decimal _singleItemPrice;
 
         public BillCalculator(IDiscount discount)
         {
             _discount = discount;
-            singleItemPrice = Price.GetSingleItemPrice();
+            _singleItemPrice = Price.GetSingleItemPrice();
         }
 
-        public decimal CalculatePaybleBill(int quantity)
+        public decimal CalculatePayableBill(int quantity)
         {
-            return _discount.CalculateDiscount(singleItemPrice, quantity);
+            var totalPrice = _singleItemPrice * quantity;
+            var discountAmount = _discount.CalculateDiscount(_singleItemPrice, quantity);
+
+            return totalPrice - discountAmount;
         }
     }
 }

@@ -7,11 +7,11 @@ namespace SingleResponsibilityPrinciple
     {
         static void Main(string[] args)
         {
-            var calculator = new BillCalculator(new BuyThreeGetOneDiscount());
+            var calculator = new BillCalculator(new BuyTwoGetOneDiscount());
 
-            var myPaybleAmout = calculator.CalculatePaybleBill(10);
+            var myPayableAmount = calculator.CalculatePayableBill(11);
 
-            Console.WriteLine(myPaybleAmout);
+            Console.WriteLine(myPayableAmount);
         }
     }
 }
