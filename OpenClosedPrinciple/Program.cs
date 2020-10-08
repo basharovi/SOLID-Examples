@@ -1,6 +1,7 @@
 ﻿using OpenClosedPrinciple.Example1;
 using OpenClosedPrinciple.Example2;
 using System;
+using OpenClosedPrinciple.Example3;
 
 namespace OpenClosedPrinciple
 {
@@ -8,16 +9,15 @@ namespace OpenClosedPrinciple
     {
         static void Main(string[] args)
         {
+            IPrinter printer = new ConsolePrinter();
             IDiscount discount = new BuyThreeGetOneDiscount();
 
             var discountAmount = discount.CalculateDiscount(25, 4);
-
-            Console.WriteLine(discountAmount);
+            printer.Print(discountAmount);
 
 
             ILogin login = new LoginWithMobileNoAndPassword(017, "1234");
-
-            Console.WriteLine(login.IsUserValid());
+            printer.Print(login.IsUserValid());
         }
     }
 }

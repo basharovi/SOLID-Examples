@@ -11,13 +11,16 @@ namespace SingleResponsibilityPrinciple
 
             var calculator = new BillCalculator(new BuyTwoGetOneDiscount());
             var myPayableAmount = calculator.CalculatePayableBill(11);
-
             printer.Print(myPayableAmount);
 
 
             var service = new UserService();
-            var isAdded = service.AddUser(new UserViewModel() {Name = "Bashar Ovi", Age = 22});
-
+            var isAdded = service.AddUser(
+                new UserViewModel
+                {
+                    Name = "Bashar Ovi",
+                    Age = 22
+                });
             printer.Print(isAdded);
         }
     }
