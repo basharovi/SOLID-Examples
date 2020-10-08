@@ -2,13 +2,19 @@
 {
     class LoginWithMobileNoAndPassword : ILogin
     {
-        public int MobileNo { get; set; }
-        public string Password { get; set; }
+        private readonly int _mobileNo;
+        public readonly string _password;
+
+        public LoginWithMobileNoAndPassword(int mobileNo, string password)
+        {
+            _mobileNo = mobileNo;
+            _password = password;
+        }
 
 
         public bool IsUserValid()
         {
-            return MobileNo == 017 && Password.Equals("1234"); // Used Dummy Data for simplicity
+            return _mobileNo == 017 && _password.Equals("1234"); // Used Dummy Data for simplicity
         }
     }
 }

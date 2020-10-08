@@ -1,4 +1,5 @@
 ﻿using OpenClosedPrinciple.Example1;
+using OpenClosedPrinciple.Example2;
 using System;
 
 namespace OpenClosedPrinciple
@@ -12,6 +13,11 @@ namespace OpenClosedPrinciple
             var discountAmount = discount.CalculateDiscount(25, 4);
 
             Console.WriteLine(discountAmount);
+
+
+            ILogin login = new LoginWithMobileNoAndPassword(017, "1234");
+
+            Console.WriteLine(login.IsUserValid());
         }
     }
 }

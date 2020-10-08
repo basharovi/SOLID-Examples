@@ -2,13 +2,18 @@
 {
     class LoginWithUserNameAndPassword : ILogin
     {
-        public string Username { get; set; }
-        public string Password { get; set; }
+        private readonly string _username;
+        public readonly string _password;
 
+        public LoginWithUserNameAndPassword(string username, string password)
+        {
+            _username = username;
+            _password = password;
+        }
 
         public bool IsUserValid()
         {
-            return Username.Equals("ABC") && Password.Equals("1234"); // Used Dummy Data for simplicity
+            return _username.Equals("ABC") && _password.Equals("1234"); // Used Dummy Data for simplicity
         }
     }
 }
