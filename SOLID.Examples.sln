@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInversionPrincipl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiskovSubstitutionPrinciple", "LiskovSubsitutionPrinciple\LiskovSubstitutionPrinciple.csproj", "{5280585B-9EEF-4142-8C2B-043D151D50BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceSegregationPrinciple", "InterfaceSegregationPrinciple\InterfaceSegregationPrinciple.csproj", "{6192AB40-F594-40CC-888C-C10563A97604}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,18 @@ Global
 		{5280585B-9EEF-4142-8C2B-043D151D50BC}.Release|x64.Build.0 = Release|Any CPU
 		{5280585B-9EEF-4142-8C2B-043D151D50BC}.Release|x86.ActiveCfg = Release|Any CPU
 		{5280585B-9EEF-4142-8C2B-043D151D50BC}.Release|x86.Build.0 = Release|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Debug|x64.Build.0 = Debug|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Debug|x86.Build.0 = Debug|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Release|x64.ActiveCfg = Release|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Release|x64.Build.0 = Release|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Release|x86.ActiveCfg = Release|Any CPU
+		{6192AB40-F594-40CC-888C-C10563A97604}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
