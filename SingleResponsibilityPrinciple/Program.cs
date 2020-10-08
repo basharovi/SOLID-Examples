@@ -1,5 +1,5 @@
 ﻿using SingleResponsibilityPrinciple.Example1;
-using System;
+using SingleResponsibilityPrinciple.Example2;
 
 namespace SingleResponsibilityPrinciple
 {
@@ -7,11 +7,18 @@ namespace SingleResponsibilityPrinciple
     {
         static void Main(string[] args)
         {
-            var calculator = new BillCalculator(new BuyTwoGetOneDiscount());
+            IPrinter printer = new ConsolePrinter();
 
+            var calculator = new BillCalculator(new BuyTwoGetOneDiscount());
             var myPayableAmount = calculator.CalculatePayableBill(11);
 
-            Console.WriteLine(myPayableAmount);
+            printer.Print(myPayableAmount);
+
+
+            var service = new UserService();
+            var isAdded = service.AddUser(new UserViewModel() {Name = "Bashar Ovi", Age = 22});
+
+            printer.Print(isAdded);
         }
     }
 }
