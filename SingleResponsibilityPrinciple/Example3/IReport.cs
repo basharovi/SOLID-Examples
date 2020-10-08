@@ -2,6 +2,6 @@
 {
     public interface IReport
     {
-        object GenerateReport(User user);
+        object GenerateReport(Employee employee);
     }
 }

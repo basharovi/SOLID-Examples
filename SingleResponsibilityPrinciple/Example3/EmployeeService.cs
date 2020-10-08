@@ -1,13 +1,13 @@
 ﻿namespace SingleResponsibilityPrinciple.Example3
 {
-    public class UserService : IUserService
+    public class EmployeeService : IEmployeeService
     {
-        public void AddUser(User user)
+        public void Add(Employee employee)
         {
             throw new System.NotImplementedException();
         }
 
-        public void UpdateUser(User user)
+        public void Update(Employee employee)
         {
             throw new System.NotImplementedException();
         }

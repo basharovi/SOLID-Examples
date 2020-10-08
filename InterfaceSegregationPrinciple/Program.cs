@@ -8,7 +8,7 @@ namespace InterfaceSegregationPrinciple
         {
             IUserService userService = new UserService();
             
-            var anUser = new User()
+            var anUser = new User
             {
                 Name = "Mr. ABC",
                 Email = "abc@abc.com"
