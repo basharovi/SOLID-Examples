@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SingleResponsibilityPrinciple.Example1;
+using System;
 
 namespace SingleResponsibilityPrinciple
 {
@@ -6,7 +7,11 @@ namespace SingleResponsibilityPrinciple
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var calculator = new BillCalculator(new BuyThreeGetOneDiscount());
+
+            var myPaybleAmout = calculator.CalculatePaybleBill(10);
+
+            Console.WriteLine(myPaybleAmout);
         }
     }
 }
