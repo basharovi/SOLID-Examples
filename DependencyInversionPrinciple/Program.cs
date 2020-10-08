@@ -1,4 +1,5 @@
 ﻿using DependencyInversionPrinciple.Example1;
+using DependencyInversionPrinciple.Example2;
 using System;
 
 namespace DependencyInversionPrinciple
@@ -7,11 +8,14 @@ namespace DependencyInversionPrinciple
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
             ILogin login = new LoginWithUserNameAndPassword("ABCD", "1234");
 
             Console.WriteLine(login.IsUserValid());
+
+            var calculator = new Calculator(new MultiplicationCalculator());
+            var result = calculator.Calculate(10, 20);
+
+            Console.WriteLine(result);
         }
     }
 }

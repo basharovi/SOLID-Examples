@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OpenClosedPrinciple.Example1
+﻿namespace OpenClosedPrinciple.Example1
 {
     class BuyThreeGetOneDiscount : IDiscount
     {
